@@ -37,3 +37,16 @@ function deleteList(event) {
 }
 
 listForm.addEventListener("submit", handleForm);
+
+let result = 0;
+
+for (let i = 1; i <= 10; i++) {
+    result += i;
+}
+console.log(result);
+
+const n = 5;
+
+for (let i = 1; i <= n; i++) {
+    console.log(i);
+}
