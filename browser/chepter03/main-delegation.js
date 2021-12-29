@@ -33,6 +33,12 @@ function createItem(text) {
   return itemRow;
 }
 
+// 폼으로 도 조작 가능
+// form.addEventListener("submit", ((event) =>{
+//   event.preventDefault();
+//   onAdd();
+// }));
+
 addBtn.addEventListener('click', () => {
   onAdd();
 });
@@ -50,3 +56,4 @@ items.addEventListener('click', event => {
     toBeDeleted.remove();
   }
 });
+
