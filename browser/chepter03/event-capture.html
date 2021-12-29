@@ -33,6 +33,9 @@
         const button = document.querySelector('button');
 
         outer.addEventListener('click', event => {
+            if (event.target !== event.currentTarget) {
+                return;
+            }
             console.log(`outer: ${event.currentTarget}, ${event.target}`);
         });
         middle.addEventListener('click', event => {

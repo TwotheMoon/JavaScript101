@@ -35,6 +35,7 @@
     <script>
         document.addEventListener('wheel', (event) => {
             console.log('scrolling');
+            //event.preventDefault(); 스크롤 이벤트에는 오류 발생 ( 당연 로직을 위해 멈추게 되면 스크롤이 느려지겠지 )
         });
         const checkbox = document.querySelector('input');
         checkbox.addEventListener('click', (event) => {
