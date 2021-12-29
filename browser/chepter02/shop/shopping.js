@@ -38,12 +38,3 @@ function deleteList(event) {
 
 listForm.addEventListener("submit", handleForm);
 
-const n = 5;
-let arr = [];
-
-for (let i = 1; i <= n; i++) {
-    arr[i] = i;
-}
-
-const result = arr.reverse().join();
-console.log(result);
