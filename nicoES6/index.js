@@ -42,16 +42,15 @@
 
 // array Method
 // Array.of()
-const friends = Array.of("nico", "lynn", "dal", "mark");
+// const friends = Array.of("nico", "lynn", "dal", "mark");
 
-console.log(friends);
+// console.log(friends);
 
 
 // Array.from()
+// const buttons = document.querySelectorAll("button");
 
-const buttons = document.querySelectorAll("button");
-
-Array.from(buttons).forEach(button => {
-    button.addEventListener("click", () => console.log("yap!"));
-})
-console.log(buttons);
+// Array.from(buttons).forEach(button => {
+//     button.addEventListener("click", () => console.log("yap!"));
+// })
+// console.log(buttons);
