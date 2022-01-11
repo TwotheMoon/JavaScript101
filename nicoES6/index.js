@@ -1,13 +1,22 @@
-const emails = ["nico@naver.com", "nico@naver.com", "moon@gmail.com", "nico@google.com"]
+const styled = (aElement) => {
+    const el = document.createElement(aElement);
+    return args => {
+        const styles = args[0];
+        el.style = styles;
+        return el;
+    }
+};
 
-// const foundMail = email.find(item => item.includes("gmail"));
-// console.log(foundMail);
+const title = styled("h1")`
+    border-radius: 10px;
+    color: blue;
+`;
 
-// const noGmail = emails.filter(email => !email.includes("gmail"));
-// console.log(noGmail);
+const subtitle = styled("span")`
+    color: red;
+`;
 
-const cleaned = emails.map((email, index) => ({
-    username: email.split("@")[0],
-    index,
-}));
-console.log(cleaned)
+title.innerText = "We just cloned";
+subtitle.innerText = "styled";
+
+document.body.append(title, subtitle);
